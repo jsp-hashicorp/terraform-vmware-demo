@@ -23,7 +23,7 @@ data "vsphere_virtual_machine" "template" {
 }
 
 resource "vsphere_virtual_machine" "vm" {
-  name             = "terraform-test-nico"
+  name             = "terraform-test-jsp"
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore.id
   folder           = "Workloads"
@@ -51,7 +51,7 @@ resource "vsphere_virtual_machine" "vm" {
 
     customize {
       linux_options {
-        host_name = "terraform-test"
+        host_name = "jsp-lnx01"
         domain    = "runvmc.local"
       }
       network_interface {
