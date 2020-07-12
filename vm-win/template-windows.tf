@@ -50,7 +50,8 @@ resource "vsphere_tag" "environment" {
   name        = "test-dev"
   category_id = vsphere_tag_category.environment.id
 }
-
+*/
+/*
 resource "vsphere_tag" "region" {
   name        = "KR"
   category_id = vsphere_tag_category.region.id
