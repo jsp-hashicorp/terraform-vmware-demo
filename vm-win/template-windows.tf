@@ -58,7 +58,7 @@ resource "vsphere_tag" "region" {
 */
 
 resource "vsphere_virtual_machine" "vm" {
-  name             = "terraform-test-01"
+  name             = "jsp-win-01"
   folder           = "Workloads"
   resource_pool_id = data.vsphere_compute_cluster.cluster.resource_pool_id
   datastore_id     = data.vsphere_datastore.datastore.id
@@ -87,7 +87,7 @@ resource "vsphere_virtual_machine" "vm" {
       
       customize {
         windows_options {
-          computer_name  = "terraform-win-test"
+          computer_name  = "jsp-win-test"
           workgroup      = "test"
          admin_password = "VMw4re"
       } 
