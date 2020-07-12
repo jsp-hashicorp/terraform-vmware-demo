@@ -1,4 +1,4 @@
-<strong>Nico's Terraform Scripts</strong>
+<strong> Terraform Scripts</strong>
 
 These scripts are for Terraform for vSphere.
 

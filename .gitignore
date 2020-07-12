@@ -1,3 +1,5 @@
 terraform.tfstat*
 terraform.tfvars
 .terraform/
+vm-win/terraform.tf*
+example/terraform.tf*
